@@ -13,7 +13,7 @@ BOARD | Tested OK with luckfox-config |
 | Luckfox Lyra PLUS | Yes | 
 | Luckfox Lyra Zero W | Yes |
 | Luckfox Lyra Pi W emmc| Yes |
-| ArmSoM Forge 1 | Still need to modify luckfox-config for the availabe RM_IO gpio for this board - see below *|
+| ArmSoM Forge 1 | Made progress with uckfox-config for the availabe RM_IO gpio for this board - see below *|
 
 Supported Boards
 Board Name | SD/EMMC |  Defconfig |
