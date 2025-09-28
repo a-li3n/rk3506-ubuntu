@@ -73,6 +73,27 @@ Luckfox Lyra boards Specifications
 nmcli connection add type gsm ifname '*' apn 'internet' connection.autoconnect yes
 nmcli conn up gsm --ask
 
+nmcli dev status
+DEVICE    TYPE      STATE                   CONNECTION         
+end1      ethernet  connected               Wired connection 2 
+cdc-wdm0  gsm       connected               gsm                
+lo        loopback  connected (externally)  lo                 
+end0      ethernet  unavailable             --
+
+Get Location
+mmcli -m 0 --location-status
+  ------------------------
+  Location | capabilities: 3gpp-lac-ci, gps-raw, gps-nmea, gps-unmanaged, agps-msa, 
+           |               agps-msb
+           |      enabled: gps-raw, gps-nmea
+           |      signals: no
+  ------------------------
+  GPS      | refresh rate: 30 seconds
+
+mmcli -m 0 --location-get
+mmcli -m 0
+
+
 root@luckfox:~# lsusb
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 001 Device 002: ID 1a86:8091 QinHeng Electronics USB HUB
@@ -103,6 +124,7 @@ root@luckfox:~# lsusb -tv
         |__ Port 002: Dev 004, If 5, Class=Vendor Specific Class, Driver=[none], 480M
             ID 1e0e:9001 Qualcomm / Option 
 ```
+
 
 
 Luckfox Lyra pinout
