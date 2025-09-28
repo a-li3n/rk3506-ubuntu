@@ -26,6 +26,15 @@ Board Name | SD/EMMC |  Defconfig |
 | Luckfox Lyra Pi W | eMMC | 1. luckfox_lyra_pi-w_ubuntu_emmc |
 | ArmSom Forge (BPI Forge1) | SDCard | 7. rk3506-armsom-forge1_ubuntu_sdmmc |
 
+ cat /etc/luckfox.cfg 
+TP_STATUS=1
+I2C2_STATUS=1
+I2C2_SCL_RM_IO=1
+I2C2_SDA_RM_IO=0
+MODULE_4G_ENABLE=1
+MODULE_4G_MODE=ppp
+MODULE_4G_APN=internet
+
 ```
 Default User Login Credentials
 
