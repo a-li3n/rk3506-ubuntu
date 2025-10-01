@@ -246,8 +246,17 @@
 };
 
 /**********usb**********/
+
 &usb20_otg0 {
-	dr_mode = "peripheral";
+	status = "okay";
+};
+
+&u2phy_otg1 {
+    phy-supply = <&vcc5v0_otg1>;
+	status = "okay";
+};
+
+&usb2phy {
 	status = "okay";
 };
 
@@ -255,7 +264,6 @@
 	dr_mode = "host";
 	status = "okay";
 };
-
 
 /**********pinctrl**********/
 &pinctrl {
