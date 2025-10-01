@@ -338,6 +338,20 @@ cd /to-sdk
 docker run --rm -it -v $PWD:/build -w /build --user $(id -u):$(id -g) lyra:rk3506-ubuntu-build
 ```
 
+Related Repo's
+```
+WiFi Dongles
+https://github.com/markbirss/rtw88
+https://github.com/markbirss/rtw89
+https://github.com/markbirss/aic8800d80.git
+https://github.com/markbirss/aic800
+
+Kernel 6.1.99 Headers
+https://github.com/markbirss/linux-6.1.99
+https://github.com/markbirss/linux-6.1.99/releases/download/1/linux-headers-6.1.99_6.1.99-3_armhf.deb
+
+```
+
 #IMPORTANT NOTE
 This SDK is provided for non commercial use only
 
