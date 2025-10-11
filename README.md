@@ -255,7 +255,29 @@ XFCE4 Desktop
 
 <img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/34296bcb-434e-4f23-b10a-1991d2b2ece3" />
 
+Install XFCE4 Desktop
 
+```
+dpkg-reconfigure tzdata
+timedatectl set-ntp off; timedatectl set-ntp on
+
+apt -y update; apt install -y --no-install-recommends xserver-xorg-input-all xserver-xorg-core xinit xfce4-terminal xserver-xorg-video-fbdev x11-utils;
+
+apt -y install xfce4 dbus-x11 mesa-utils xubuntu-default-settings xfce4-goodies lightdm-gtk-greeter lightdm-gtk-greeter-settings;
+
+rm /etc/systemd/system/default.target;
+systemctl set-default graphical.target;
+reboot
+
+```
+
+Return to Console only
+
+```
+
+systemctl set-default multi-user.target
+
+```
 
 SDK Usage
 
